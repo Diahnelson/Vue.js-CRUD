@@ -1,7 +1,7 @@
 <template>
   <div class="container" style="max-width: 600px">
     <!-- Heading -->
-    <h2 class="text-center mt-5">My Vue Todo App</h2>
+    <h2 class="text-center mt-5">Welcome to my Vue.js CRUD App</h2>
 
     <!-- Input -->
     <div class="d-flex mt-5">
@@ -21,9 +21,9 @@
       <thead>
         <tr>
           <th scope="col">Task</th>
-          <th scope="col" style="width: 120px">Status</th>
-          <th scope="col" class="text-center">#</th>
-          <th scope="col" class="text-center">#</th>
+          <th scope="col" style="width: 120px">Update Task</th>
+          <th scope="col" class="text-center">Delete Task</th>
+          <th scope="col" class="text-center">Edit Task</th>
         </tr>
       </thead>
       <tbody>
@@ -78,11 +78,11 @@ export default {
       /* Status could be: 'to-do' / 'in-progress' / 'finished' */
       tasks: [
         {
-          name: "Steal bananas from the supermarket.",
+          name: "Laundry.",
           status: "to-do",
         },
         {
-          name: "Eat 1 kg chocolate in 1 hour.",
+          name: "Drink plain water 2L per day.",
           status: "in-progress",
         },
         {
